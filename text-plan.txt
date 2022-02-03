@@ -1,0 +1,72 @@
+admin
+    role 
+    permission
+site
+    setting 
+    pages
+    statistics
+general option
+    multi language
+    multi theme
+    social shereing
+user
+    social media  auth api
+    activity log
+    profile and setting
+    react with product (wishlist Evaluation comment)
+    Purchases with Payment methods
+product
+    catigory
+    tags
+    images 
+    colors
+    size
+    rate
+    offers
+order 
+    status
+    items 
+    bills
+    Bounced back
+
+
+categories 3 
+    posts 4
+    subcategores 4
+    ???? فحص عدد البوستات اكتر من 4
+        posts
+     -----------------------------
+     الريتاتش والتيست
+
+
+Dedicated and efficient full stack Laravel web developer 
+work experience since 2018; creating websites and API mobile applications.
+
+would like to join a suitable work 
+environment to further enhance and improve my skills within a fast and dynamic paced setting, thus 
+allowing me to use
+
+ my skills effectively and optimally, in order to contribute and work optimally 
+at all times when given tasks
+
+rest api css3 --- 
+useing
+
+
+
+تسجيل الدخول بالسوشيال 
+من المواقع api 
+services 
+الفيس
+Laravel 8 Socialite
+https://developers.facebook.com/apps/?show_reminder=true
+انشاء تطبيق على الدومين
+edit app url in env
+جوجل
+https://console.cloud.google.com/apis/dashboard?project=cmsapp-338516&supportedpurview=project
+
+اعادادات الفايل مانجر 
+https://unisharp.github.io/laravel-filemanager/integration
+
+صور المشاركه
+https://github.com/jorenvh/laravel-share

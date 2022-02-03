@@ -1,0 +1,20 @@
+html{
+    direction: rtl;
+}
+.main-menu > li > a::after {
+    margin-left: 0;
+    margin-right: 6px;
+}
+.main-menu > li > .sub-menu {
+    top: 100%;
+    left: auto;
+    right: 0px;
+}
+.logo-mobile img {
+    right: 0;
+    left: auto;
+}
+.how2::before {
+    background-color: #17b978;
+    right: -1px;
+}
