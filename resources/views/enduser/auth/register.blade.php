@@ -55,7 +55,7 @@
         @csrf
 
         <div class="input-group mb-3">
-          <input type="text" class="form-control" name="name" placeholder="الاسم">
+          <input type="text" class="form-control" value="{{old('name')}}" name="name" placeholder="الاسم">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" name="email" placeholder="البريد الالكترونى">
+          <input type="email" class="form-control" value="{{old('email')}}" name="email" placeholder="البريد الالكترونى">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>

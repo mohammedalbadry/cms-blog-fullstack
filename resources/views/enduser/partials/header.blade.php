@@ -168,7 +168,7 @@
 
             <!-- Banner -->
             <div class="banner-header">
-                <a href="#"><img src="images/banner-01.jpg" alt="IMG"></a>
+            <a href="#"><img src="{{url('uploads/banner/default.png')}}" alt="IMG"></a>
             </div>
         </div>	
         
@@ -178,7 +178,7 @@
                 <!-- Menu desktop -->
                 <nav class="menu-desktop">
                     <a class="logo-stick" href="index.html">
-                        <img src="images/icons/logo-01.png" alt="LOGO">
+                        <img src="{{$setting->logo_path}}" alt="{{$setting->name}}">
                     </a>
 
                     <ul class="main-menu">

@@ -19,11 +19,11 @@ class Setting extends Model
 
     public function getLogoPathAttribute()
     {
-        return asset("uploads/settings/" . $this->logo);
+        return url("uploads/settings/" . $this->logo);
     }
     public function getIconPathAttribute()
     {
-        return asset("uploads/settings/" . $this->icon);
+        return url("uploads/settings/" . $this->icon);
     }
 
 }

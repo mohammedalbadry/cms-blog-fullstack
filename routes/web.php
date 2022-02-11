@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::group(['prefix' => 'laravel-filemanager'], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
 
 Route::group(['prefix' => 'admin', 'namespace'=> 'CPanal'], function(){
 

@@ -38,7 +38,7 @@
                 <input id="thumbnail" class="form-control" type="text" name="image">
               </div>
               <div id="holder" style="margin-top:15px;max-height:100px;">
-                <img style="margin-top:15px;max-height:100px;" src="{{ $model->image }}">
+                <img style="margin-top:15px;max-height:100px;" src="{{ $model->image != 'default.png' ? $model->image : $model->image_path }}">
               </div>
           </div>
           

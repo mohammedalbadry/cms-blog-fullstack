@@ -61,7 +61,7 @@
                                       <p>هل انت متاكد من حذف <strong>{{$model->title}}</strong></p>
                                     </div>
                                     <div class="modal-footer justify-content-between">
-                                      <form method="post" action="{{aurl("contact/".$model->id)}}">
+                                      <form method="post" action="{{aurl("contacts/".$model->id)}}">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-danger">تاكيد الحذف</button>

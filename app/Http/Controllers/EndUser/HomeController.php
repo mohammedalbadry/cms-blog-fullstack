@@ -37,12 +37,12 @@ class HomeController extends Controller
                                 ->withCount('posts')
                                 ->having('posts_count', '>', 3)
                                 ->withCount('children')
-                                ->having('children_count', '>', 0)
+                                ->having('children_count', '>=', 0)
                                 ->orderBy('posts_count', 'DESC')->take(3)->get();
 
         $sub_categories = [];
         $article = Post::whereHas('categories', function($q) {
-            $q->where('name', "مقالات");
+            $q->where('name', "اخبار");
         })->orderBy('id', 'DESC')->take(6)->get();
 
 

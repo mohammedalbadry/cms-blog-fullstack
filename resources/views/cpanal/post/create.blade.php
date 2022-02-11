@@ -6,7 +6,6 @@
 
 <section class="content">
   <div class="card-body pad card card-outline card-info">
-
     <form role="form" method="post" action="{{aurl('posts')}}" enctype="multipart/form-data">
       @csrf
       <div class="row">
@@ -33,10 +32,10 @@
                     <i class="fa fa-picture-o"></i> اختر
                   </a>
                 </span>
-                <input id="thumbnail" class="form-control" type="text" name="image">
+                <input id="thumbnail" class="form-control" type="text" value="{{ old('image') }}" name="image">
               </div>
               <div id="holder" style="margin-top:15px;max-height:100px;">
-                <img style="margin-top:15px;max-height:100px;" src="{{ asset('uploads/posts_images/default.png') }}">
+                <img style="margin-top:15px;max-height:100px;" src="{{ old('image', asset('uploads/posts_images/default.png') ) }}">
               </div>
           </div>          
 
@@ -49,7 +48,7 @@
               <label>الوسم</label>
               <select class="tags form-control" name="tags[]" multiple="multiple">
                 @foreach ($tags as $tag)
-                        <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                        <option value="{{ $tag->id }}" {{ is_array(old("tags")) && in_array($tag->id, old("tags")) ? "selected" : "" }} >{{ $tag->name }}</option>
                 @endforeach
               </select>
               <a href="{{aurl("tags/create")}}" target=”_blank”> اضافة وسم جديد</a>
@@ -59,7 +58,7 @@
               <label>الاقسام</label>
               <select class="categories form-control" name="categories[]" multiple="multiple">
                 @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}" {{ is_array(old("categories")) && in_array($category->id, old("categories")) ? "selected" : "" }} >{{ $category->name }}</option>
                 @endforeach
               </select>
               <a href="{{aurl("categories/create")}}" target=”_blank”> اضافة قسم جديد</a>

@@ -35,23 +35,24 @@
                     <i class="fa fa-picture-o"></i> Choose
                   </a>
                 </span>
-                <input id="thumbnail" class="form-control" type="text" name="image">
+                <input id="thumbnail" class="form-control" value="{{old('image')}}" type="text" name="image">
               </div>
               <div id="holder" style="margin-top:15px;max-height:100px;">
-                <img style="margin-top:15px;max-height:100px;" src="{{ $model->image }}">
+                <img style="margin-top:15px;max-height:100px;" src="{{ old('image',  $model->image) }}">
               </div>
           </div>          
 
             <div class="form-group">
               <label>نبذة</label>
-              <textarea class="form-control" name="excerpt"  rows="3" placeholder="وصف لا يزيد عد 160 حرف">{{ $model->excerpt }}</textarea>
+              <textarea class="form-control" name="excerpt"  rows="3" placeholder="وصف لا يزيد عد 160 حرف">{{ old('excerpt', $model->excerpt) }}</textarea>
             </div>
 
             <div class="form-group">
               <label>الوسم</label>
               <select class="tags form-control" name="tags[]" multiple="multiple">
                 @foreach ($tags as $tag)
-                    <option value="{{ $tag->id }}" {{ in_array($tag->id, $selected_tags) ? "selected" : " " }}>{{ $tag->name }}</option>
+                    <option value="{{ $tag->id }}" 
+                      {{ in_array($tag->id, $selected_tags) || is_array(old("tags")) && in_array($tag->id, old("tags"))? "selected" : " " }}>{{ $tag->name }}</option>
                 @endforeach
               </select>
             </div>
@@ -60,7 +61,7 @@
               <label>الاقسام</label>
               <select class="categories form-control" name="categories[]" multiple="multiple">
                 @foreach ($categories as $category)
-                    <option value="{{ $category->id }}" {{ in_array($category->id, $selected_categories) ? "selected" : " " }}>{{ $category->name }}</option>
+                    <option value="{{ $category->id }}" {{ in_array($category->id, $selected_categories) || is_array(old("categories")) && in_array($category->id, old("categories"))? "selected" : " " }}>{{ $category->name }}</option>
                 @endforeach
               </select>
             </div>

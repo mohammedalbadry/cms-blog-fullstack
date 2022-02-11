@@ -19,7 +19,7 @@
             <div class="icon">
               <i class="fas fa-users"></i>
             </div>
-            <a href="{{aurl('user')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="{{aurl('users')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -34,7 +34,7 @@
             <div class="icon">
               <i class="fas fa-comments"></i>
             </div>
-            <a href="{{aurl('comment')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="{{aurl('comments')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -49,7 +49,7 @@
             <div class="icon">
               <i class="fas fa-newspaper"></i>
             </div>
-            <a href="{{aurl('post')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="{{aurl('posts')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -64,7 +64,7 @@
             <div class="icon">
               <i class="fas fa-ban"></i>
             </div>
-            <a href="{{aurl('report')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="{{aurl('reports')}}" class="small-box-footer">المزيد <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

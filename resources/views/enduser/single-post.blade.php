@@ -50,7 +50,9 @@
 								<img src="{{$post->image}}" class="w-100" alt="IMG">
 							</div>
                             
-                            {!! $post->body !!}
+                            <div class="my-5">
+								{!! $post->body !!}
+							</div>
 
 							<!-- Tag -->
 							<div class="flex-s-s p-t-12 p-b-15">

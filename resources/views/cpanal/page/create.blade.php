@@ -36,7 +36,7 @@
                 <input id="thumbnail" class="form-control" type="text" name="image">
               </div>
               <div id="holder" style="margin-top:15px;max-height:100px;">
-                <img style="margin-top:15px;max-height:100px;" src="{{ asset('uploads/page_images/default.png') }}">
+                <img style="margin-top:15px;max-height:100px;" src="{{ asset('uploads/pages_images/default.png') }}">
               </div>
           </div> 
           
